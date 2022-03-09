@@ -10,10 +10,19 @@ body {
 header {
   width: 100vw;
   background-color: #303030;
+  background-image: url(../images/head-bg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header .top-back {
+  background-color: #303030;
+  width: 100vw;
 }
 
 header .top-sec {
-  width: 90%;
+  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
