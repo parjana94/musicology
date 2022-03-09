@@ -1,8 +1,14 @@
 @media screen and (max-width:768px){
     header{
         .top-sec{
+            img{
+                width: 100px;
+            }
             nav{
                 display: none;
+            }
+            .burger{
+                display: inline-block;
             }
         }
     }
