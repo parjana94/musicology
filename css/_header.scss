@@ -1,0 +1,41 @@
+header{
+    width: 100vw;
+    background-color: $darkgrey;
+    .top-sec{
+        width: 90%;
+        @include flexcenter(row);
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px 0;
+        max-width: 1400px;
+        ul{
+            display: flex;
+            gap: 40px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-family: $monst;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                background-color: $orange;
+                width: 0px;
+                height: 2px;
+                left: 0;
+                bottom: -2px;
+                transition: .5s;
+            }
+            &:hover::after{
+                width: 30px;
+            }
+        }
+        .fa-magnifying-glass{
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
