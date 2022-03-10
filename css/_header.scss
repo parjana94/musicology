@@ -8,7 +8,6 @@ header{
     .top-back{
         background-color: $darkgrey;
         width: 100vw;
-        height: 7vw;
     }
     .top-sec{
         width: 90vw;
@@ -17,11 +16,6 @@ header{
         margin: 0 auto;
         padding: 20px 0;
         max-width: 1400px;
-        position: fixed;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%);
-        z-index: 100;
         ul{
             display: flex;
             gap: 40px;

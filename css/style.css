@@ -19,7 +19,6 @@ header {
 header .top-back {
   background-color: #303030;
   width: 100vw;
-  height: 7vw;
 }
 
 header .top-sec {
@@ -43,12 +42,6 @@ header .top-sec {
   margin: 0 auto;
   padding: 20px 0;
   max-width: 1400px;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  z-index: 100;
 }
 
 header .top-sec ul {
