@@ -13,7 +13,6 @@ header{
         width: 90vw;
         @include flexcenter(row);
         justify-content: space-between;
-        margin: 0 auto;
         padding: 20px 0;
         max-width: 1400px;
         ul{

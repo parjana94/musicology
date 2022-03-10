@@ -39,7 +39,6 @@ header .top-sec {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
   padding: 20px 0;
   max-width: 1400px;
 }
