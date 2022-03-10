@@ -1,18 +1,26 @@
 header{
-    width: 100vw;
-    background-color: $darkgrey;
-    background-image: url(../images/head-bg.jpg);
     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    .bg-image{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        img{
+            width: 100vw;
+            height: 100vh;
+        }
+    }
     .top-back{
         background-color: $darkgrey;
         width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     .top-sec{
         width: 90vw;
         @include flexcenter(row);
         justify-content: space-between;
+        margin: 0 auto;
         padding: 20px 0;
         max-width: 1400px;
         ul{
@@ -22,7 +30,7 @@ header{
         a{
             color: white;
             text-decoration: none;
-            font-family: $monst;
+            font-family: $oswald;
             text-transform: uppercase;
             font-size: 1.2rem;
             position: relative;
@@ -49,6 +57,22 @@ header{
             display: none;
             cursor: pointer;
             color: white;
+        }
+    }
+    .head-txt{
+        position: absolute;
+        top: 45vh;
+        left: 3vw;
+        h1{
+            font-family: $oswald;
+            font-size: 10vw;
+            text-transform: capitalize;
+        }
+        p{
+            font-family: $monst;
+            font-size: 2vw;
+            width: 42vw;
+            margin-top: 30px;
         }
     }
 }

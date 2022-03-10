@@ -1,6 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
 body {
   background-color: #282828;
+}
+
+h1, h2, p {
+  color: white;
 }
 
 .container {
@@ -8,17 +12,26 @@ body {
 }
 
 header {
-  width: 100vw;
-  background-color: #303030;
-  background-image: url(../images/head-bg.jpg);
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+}
+
+header .bg-image {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+header .bg-image img {
+  width: 100vw;
+  height: 100vh;
 }
 
 header .top-back {
   background-color: #303030;
   width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 header .top-sec {
@@ -39,6 +52,7 @@ header .top-sec {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
   padding: 20px 0;
   max-width: 1400px;
 }
@@ -84,6 +98,25 @@ header .top-sec .burger {
   display: none;
   cursor: pointer;
   color: white;
+}
+
+header .head-txt {
+  position: absolute;
+  top: 45vh;
+  left: 3vw;
+}
+
+header .head-txt h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 10vw;
+  text-transform: capitalize;
+}
+
+header .head-txt p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  width: 42vw;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 992px) {
