@@ -1,47 +1,71 @@
-
-
-
 @media screen and (max-width:992px){
     header{
         .top-sec{
             padding: 10px 0;
         }
+        .head-txt{
+            a{
+                font-size: 1.6vw;
+            }
+        }
     }
-}
-
-
-
-@media screen and (max-width:768px){
-    header{
-        .top-sec{
-            img{
-                width: 100px;
-            }
-            nav{
-                display: none;
-            }
-            .burger{
-                display: inline-block;
+    .dance-tour{
+        height: calc(100vh - 88px);
+        .dance-tour-txt{
+            p{
+                font-size: 1.6vw;
+                width: 50vw;
             }
         }
     }
 }
+
 @media screen and (max-width:768px){
     header{
         .top-sec{
             img{
                 width: 70px;
             }
+            nav{
+                display: none;
+            }
+            .burger{
+                display: inline-block;
+            } 
+        }
+        .head-txt{
+            a{
+                font-size: 2vw;
+            }
+        }
+    }
+    .dance-tour{
+        height: calc(100vh - 58px);
+        .dance-tour-txt{
+            h2{
+                font-size: 4vw;
+            }
+            p{
+                font-size: 2vw;
+                width: 60vw;
+            }
         }
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:576px){
     header{
-        .top-sec{
-            img{
-                width: 50px;
-            }
+        height: auto;
+        .bg-image{
+            height: 320px;
+        }
+        .bg-image img{
+            height: 320px;
+        }
+        .head-txt{
+            position: absolute;
+            top: 15vh;
+            left: 3vw;
         }
     }
 }

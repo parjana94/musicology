@@ -168,17 +168,15 @@ header .head-txt a:hover {
   header .top-sec {
     padding: 10px 0;
   }
-}
-
-@media screen and (max-width: 768px) {
-  header .top-sec img {
-    width: 100px;
+  header .head-txt a {
+    font-size: 1.6vw;
   }
-  header .top-sec nav {
-    display: none;
+  .dance-tour {
+    height: calc(100vh - 88px);
   }
-  header .top-sec .burger {
-    display: inline-block;
+  .dance-tour .dance-tour-txt p {
+    font-size: 1.6vw;
+    width: 50vw;
   }
 }
 
@@ -186,11 +184,41 @@ header .head-txt a:hover {
   header .top-sec img {
     width: 70px;
   }
+  header .top-sec nav {
+    display: none;
+  }
+  header .top-sec .burger {
+    display: inline-block;
+  }
+  header .head-txt a {
+    font-size: 2vw;
+  }
+  .dance-tour {
+    height: calc(100vh - 58px);
+  }
+  .dance-tour .dance-tour-txt h2 {
+    font-size: 4vw;
+  }
+  .dance-tour .dance-tour-txt p {
+    font-size: 2vw;
+    width: 60vw;
+  }
 }
 
-@media screen and (max-width: 375px) {
-  header .top-sec img {
-    width: 50px;
+@media screen and (max-width: 576px) {
+  header {
+    height: auto;
+  }
+  header .bg-image {
+    height: 320px;
+  }
+  header .bg-image img {
+    height: 320px;
+  }
+  header .head-txt {
+    position: absolute;
+    top: 15vh;
+    left: 3vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
