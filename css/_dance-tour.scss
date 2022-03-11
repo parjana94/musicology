@@ -1,8 +1,7 @@
 .dance-tour{
-    height: $height;
+    min-height: $height;
     width: 100vw;
     background-color: $orange;
-    overflow-x: hidden;
     .dance-tour-txt{
         text-align: center;
         padding-top: 80px;
@@ -20,21 +19,17 @@
         gap: 60px;
         margin-top: 8vh;
     }
-    .box{
-        width: 25vw;
-        height: 50vh;         
+    .box{   
         background-color: $darkgrey;
         cursor: pointer;
         transition: .5s;
         &:hover{
             transform: scale(1.03);
         }
-        img{
-            width: 25vw;
-        }
         .box-txt{
             text-align: center;
-            padding: 30px;
+            padding: 20px 0;
+            @include flexcenter(column);
             h2{
                 font-size: 1.5vw;
                 font-family: $oswald;
@@ -43,6 +38,7 @@
             p{
                 font-family: $monst;
                 padding-top: 10px;
+                width: 300px;
             }
         }
     }

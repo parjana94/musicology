@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&display=swap");
 body {
   background-color: #282828;
+  overflow-x: hidden;
 }
 
 h1, h2, p {
@@ -138,10 +139,9 @@ header .head-txt a:hover {
 }
 
 .dance-tour {
-  height: calc(100vh - 108px);
+  min-height: calc(100vh - 108px);
   width: 100vw;
   background-color: #e8631c;
-  overflow-x: hidden;
 }
 
 .dance-tour .dance-tour-txt {
@@ -179,8 +179,6 @@ header .head-txt a:hover {
 }
 
 .dance-tour .box {
-  width: 25vw;
-  height: 50vh;
   background-color: #303030;
   cursor: pointer;
   -webkit-transition: .5s;
@@ -192,13 +190,22 @@ header .head-txt a:hover {
           transform: scale(1.03);
 }
 
-.dance-tour .box img {
-  width: 25vw;
-}
-
 .dance-tour .box .box-txt {
   text-align: center;
-  padding: 30px;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .dance-tour .box .box-txt h2 {
@@ -210,6 +217,7 @@ header .head-txt a:hover {
 .dance-tour .box .box-txt p {
   font-family: "Montserrat", sans-serif;
   padding-top: 10px;
+  width: 300px;
 }
 
 @media screen and (max-width: 992px) {
