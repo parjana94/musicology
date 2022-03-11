@@ -1,10 +1,10 @@
 .dance-tour{
-    min-height: $height;
+    min-height: 100vh;
     width: 100vw;
     background-color: $orange;
     .dance-tour-txt{
         text-align: center;
-        padding-top: 80px;
+        padding-top: 110px;
         h2{
             @include headtxt;
         }
@@ -17,7 +17,7 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 60px;
-        margin-top: 8vh;
+        margin-top: 30px;
     }
     .box{   
         background-color: $darkgrey;
@@ -25,6 +25,9 @@
         transition: .5s;
         &:hover{
             transform: scale(1.03);
+        }
+        img{
+            width: 22vw;
         }
         .box-txt{
             text-align: center;
@@ -38,7 +41,7 @@
             p{
                 font-family: $monst;
                 padding-top: 10px;
-                width: 300px;
+                width: 20vw;
             }
         }
     }

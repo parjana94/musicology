@@ -139,14 +139,14 @@ header .head-txt a:hover {
 }
 
 .dance-tour {
-  min-height: calc(100vh - 108px);
+  min-height: 100vh;
   width: 100vw;
   background-color: #e8631c;
 }
 
 .dance-tour .dance-tour-txt {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 110px;
 }
 
 .dance-tour .dance-tour-txt h2 {
@@ -175,7 +175,7 @@ header .head-txt a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 60px;
-  margin-top: 8vh;
+  margin-top: 30px;
 }
 
 .dance-tour .box {
@@ -188,6 +188,10 @@ header .head-txt a:hover {
 .dance-tour .box:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+.dance-tour .box img {
+  width: 22vw;
 }
 
 .dance-tour .box .box-txt {
@@ -217,7 +221,7 @@ header .head-txt a:hover {
 .dance-tour .box .box-txt p {
   font-family: "Montserrat", sans-serif;
   padding-top: 10px;
-  width: 300px;
+  width: 20vw;
 }
 
 @media screen and (max-width: 992px) {
@@ -306,6 +310,9 @@ header .head-txt a:hover {
   }
   .dance-tour .box .box-txt h2 {
     font-size: 4vw;
+  }
+  .dance-tour .box .box-txt p {
+    width: 100%;
   }
 }
 
