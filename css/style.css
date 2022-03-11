@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&display=swap");
 body {
   background-color: #282828;
-  overflow: hidden;
 }
 
 h1, h2, p {
@@ -32,6 +31,7 @@ header .top-back {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 
 header .top-sec {
@@ -117,6 +117,51 @@ header .head-txt p {
   font-size: 2vw;
   width: 42vw;
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header .head-txt a {
+  padding: 5px 50px;
+  text-decoration: none;
+  background-color: #e8631c;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3vw;
+  font-family: "Oswald", sans-serif;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .head-txt a:hover {
+  color: #e8631c;
+  background-color: transparent;
+}
+
+.dance-tour {
+  height: calc(100vh - 108px);
+  width: 100vw;
+  background-color: #e8631c;
+}
+
+.dance-tour .dance-tour-txt {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.dance-tour .dance-tour-txt h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.dance-tour .dance-tour-txt p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3vw;
+  width: 40vw;
+  margin: 0 auto;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 992px) {

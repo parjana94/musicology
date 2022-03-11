@@ -1,0 +1,15 @@
+.dance-tour{
+    height: $height;
+    width: 100vw;
+    background-color: $orange;
+    .dance-tour-txt{
+        text-align: center;
+        padding-top: 80px;
+        h2{
+            @include headtxt;
+        }
+        p{
+            @include headp;
+        }
+    }
+}
