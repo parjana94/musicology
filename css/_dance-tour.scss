@@ -12,4 +12,36 @@
             @include headp;
         }
     }
+    .boxes{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-top: 8vh;
+    }
+    .box{
+        width: 25vw;
+        background-color: $darkgrey;
+        cursor: pointer;
+        transition: .5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        img{
+            width: 25vw;
+        }
+        .box-txt{
+            text-align: center;
+            padding: 30px;
+            h2{
+                font-size: 1.5vw;
+                font-family: $oswald;
+                text-transform: uppercase;
+            }
+            p{
+                font-family: $monst;
+                padding-top: 10px;
+            }
+        }
+    }
 }

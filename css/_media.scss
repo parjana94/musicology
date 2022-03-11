@@ -12,9 +12,24 @@
     .dance-tour{
         height: calc(100vh - 88px);
         .dance-tour-txt{
+            h2{
+                font-size: 3.5vw;
+            }
             p{
                 font-size: 1.6vw;
                 width: 50vw;
+            }
+        }
+    }
+    .boxes{
+        .box{
+            .box-txt{
+                h2{
+                    font-size: 2.5vw;
+                }
+                p{
+                    line-height: 20px;
+                }
             }
         }
     }
@@ -50,6 +65,9 @@
                 width: 60vw;
             }
         }
+        .boxes{
+            gap:30px
+        }
     }
 }
 
@@ -64,8 +82,30 @@
         }
         .head-txt{
             position: absolute;
-            top: 15vh;
+            top: 20vh;
             left: 3vw;
+        }
+    }
+    .dance-tour{
+        height: auto;
+        .dance-tour-txt{
+            p{
+                font-size: 2.5vw;
+            }
+        }
+        .box{
+            width: 70vw;
+            img{
+                width: 70vw;
+            }
+            &:hover{
+                transform: scale(1);
+            }
+            .box-txt{
+                h2{
+                    font-size: 4vw;
+                }
+            }
         }
     }
 }
@@ -79,6 +119,17 @@
             }
             a{
                 font-size: 3vw;
+            }
+        }
+    }
+    .dance-tour{
+        .dance-tour-txt{
+            h2{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 3vw;
+                width: 70vw;
             }
         }
     }

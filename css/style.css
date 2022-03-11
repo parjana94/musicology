@@ -164,6 +164,52 @@ header .head-txt a:hover {
   line-height: 20px;
 }
 
+.dance-tour .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 8vh;
+}
+
+.dance-tour .box {
+  width: 25vw;
+  background-color: #303030;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.dance-tour .box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.dance-tour .box img {
+  width: 25vw;
+}
+
+.dance-tour .box .box-txt {
+  text-align: center;
+  padding: 30px;
+}
+
+.dance-tour .box .box-txt h2 {
+  font-size: 1.5vw;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.dance-tour .box .box-txt p {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+}
+
 @media screen and (max-width: 992px) {
   header .top-sec {
     padding: 10px 0;
@@ -174,9 +220,18 @@ header .head-txt a:hover {
   .dance-tour {
     height: calc(100vh - 88px);
   }
+  .dance-tour .dance-tour-txt h2 {
+    font-size: 3.5vw;
+  }
   .dance-tour .dance-tour-txt p {
     font-size: 1.6vw;
     width: 50vw;
+  }
+  .boxes .box .box-txt h2 {
+    font-size: 2.5vw;
+  }
+  .boxes .box .box-txt p {
+    line-height: 20px;
   }
 }
 
@@ -203,6 +258,9 @@ header .head-txt a:hover {
     font-size: 2vw;
     width: 60vw;
   }
+  .dance-tour .boxes {
+    gap: 30px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -217,8 +275,27 @@ header .head-txt a:hover {
   }
   header .head-txt {
     position: absolute;
-    top: 15vh;
+    top: 20vh;
     left: 3vw;
+  }
+  .dance-tour {
+    height: auto;
+  }
+  .dance-tour .dance-tour-txt p {
+    font-size: 2.5vw;
+  }
+  .dance-tour .box {
+    width: 70vw;
+  }
+  .dance-tour .box img {
+    width: 70vw;
+  }
+  .dance-tour .box:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .dance-tour .box .box-txt h2 {
+    font-size: 4vw;
   }
 }
 
@@ -229,6 +306,13 @@ header .head-txt a:hover {
   }
   header .head-txt a {
     font-size: 3vw;
+  }
+  .dance-tour .dance-tour-txt h2 {
+    margin-bottom: 10px;
+  }
+  .dance-tour .dance-tour-txt p {
+    font-size: 3vw;
+    width: 70vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
