@@ -141,6 +141,7 @@ header .head-txt a:hover {
   height: calc(100vh - 108px);
   width: 100vw;
   background-color: #e8631c;
+  overflow-x: hidden;
 }
 
 .dance-tour .dance-tour-txt {
