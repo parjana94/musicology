@@ -3,7 +3,6 @@ header{
     .bg-image{
         width: 100vw;
         height: 100vh;
-        position: fixed;
         img{
             width: 100vw;
             height: 100vh;
@@ -12,7 +11,7 @@ header{
     .top-back{
         background-color: $darkgrey;
         width: 100vw;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
     }

@@ -19,7 +19,6 @@ header {
 header .bg-image {
   width: 100vw;
   height: 100vh;
-  position: fixed;
 }
 
 header .bg-image img {
@@ -30,7 +29,7 @@ header .bg-image img {
 header .top-back {
   background-color: #303030;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -141,18 +140,6 @@ header .head-txt p {
 @media screen and (max-width: 768px) {
   header .top-sec img {
     width: 70px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  header {
-    height: auto;
-  }
-  header .bg-image {
-    height: auto;
-  }
-  header .bg-image img {
-    height: auto;
   }
 }
 
