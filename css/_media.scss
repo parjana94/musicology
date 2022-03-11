@@ -69,3 +69,17 @@
         }
     }
 }
+
+@media screen and (max-width:375px){
+    header{
+        .head-txt{
+            p{
+                font-size: 3vw;
+                width: 70vw;
+            }
+            a{
+                font-size: 3vw;
+            }
+        }
+    }
+}

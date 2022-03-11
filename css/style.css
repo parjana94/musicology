@@ -221,4 +221,14 @@ header .head-txt a:hover {
     left: 3vw;
   }
 }
+
+@media screen and (max-width: 375px) {
+  header .head-txt p {
+    font-size: 3vw;
+    width: 70vw;
+  }
+  header .head-txt a {
+    font-size: 3vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
