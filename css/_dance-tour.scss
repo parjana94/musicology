@@ -21,11 +21,12 @@
     }
     .box{
         width: 25vw;
+        height: 50vh;         
         background-color: $darkgrey;
         cursor: pointer;
         transition: .5s;
         &:hover{
-            transform: scale(1.1);
+            transform: scale(1.03);
         }
         img{
             width: 25vw;

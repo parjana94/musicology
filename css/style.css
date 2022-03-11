@@ -179,6 +179,7 @@ header .head-txt a:hover {
 
 .dance-tour .box {
   width: 25vw;
+  height: 50vh;
   background-color: #303030;
   cursor: pointer;
   -webkit-transition: .5s;
@@ -186,8 +187,8 @@ header .head-txt a:hover {
 }
 
 .dance-tour .box:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .dance-tour .box img {
