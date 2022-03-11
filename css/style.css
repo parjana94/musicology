@@ -299,8 +299,11 @@ header .head-txt a:hover {
   .dance-tour .dance-tour-txt {
     padding-top: 30px;
   }
+  .dance-tour .dance-tour-txt h2 {
+    font-size: 5vw;
+  }
   .dance-tour .dance-tour-txt p {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
   .dance-tour .box {
     width: 70vw;
@@ -313,10 +316,11 @@ header .head-txt a:hover {
             transform: scale(1);
   }
   .dance-tour .box .box-txt h2 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .dance-tour .box .box-txt p {
     width: 100%;
+    font-size: 3.5vw;
   }
 }
 
