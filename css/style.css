@@ -10,334 +10,182 @@ h1, h2, p {
 
 .container {
   max-width: 1400px;
-}
-
-header {
-  height: 100vh;
-}
-
-header .bg-image {
-  width: 100vw;
-  height: 100vh;
-}
-
-header .bg-image img {
-  width: 100vw;
-  height: 100vh;
-}
-
-header .top-back {
-  background-color: #303030;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-}
-
-header .top-sec {
-  width: 90vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: 0 auto;
-  padding: 20px 0;
-  max-width: 1400px;
 }
 
-header .top-sec ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-}
-
-header .top-sec a {
-  color: white;
-  text-decoration: none;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.2rem;
+.top {
+  height: 100vh;
+  background-image: url(../images/head-bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
+  overflow: hidden;
 }
 
-header .top-sec a::after {
-  content: '';
+.top .top-txt {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  background-color: #e8631c;
-  width: 0px;
-  height: 2px;
-  left: 0;
-  bottom: -2px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  top: 50%;
+  left: 13%;
 }
 
-header .top-sec a:hover::after {
-  width: 30px;
-}
-
-header .top-sec .fa-magnifying-glass {
-  color: white;
-  cursor: pointer;
-}
-
-header .top-sec .burger {
-  display: none;
-  cursor: pointer;
-  color: white;
-}
-
-header .head-txt {
-  position: absolute;
-  top: 45vh;
-  left: 3vw;
-}
-
-header .head-txt h1 {
+.top .top-txt h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 10vw;
+  font-size: 7.5vw;
   text-transform: capitalize;
 }
 
-header .head-txt p {
+.top .top-txt p {
   font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
-  width: 42vw;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  font-size: 1.5vw;
+  width: 40vw;
+  letter-spacing: 1px;
+  padding: 20px 0;
 }
 
-header .head-txt a {
-  padding: 5px 50px;
+.top .top-txt a {
   text-decoration: none;
-  background-color: #e8631c;
   color: white;
   text-transform: uppercase;
-  font-size: 1.3vw;
   font-family: "Oswald", sans-serif;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-header .head-txt a:hover {
-  color: #e8631c;
-  background-color: transparent;
-}
-
-.dance-tour {
-  min-height: 100vh;
-  width: 100vw;
   background-color: #e8631c;
-}
-
-.dance-tour .dance-tour-txt {
-  text-align: center;
-  padding-top: 110px;
-}
-
-.dance-tour .dance-tour-txt h2 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-size: 3vw;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-
-.dance-tour .dance-tour-txt p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.3vw;
-  width: 40vw;
-  margin: 0 auto;
-  line-height: 20px;
-}
-
-.dance-tour .boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 60px;
-  margin-top: 30px;
-}
-
-.dance-tour .box {
-  background-color: #303030;
-  cursor: pointer;
+  padding: 5px 40px;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.dance-tour .box:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+.top .top-txt a:hover {
+  background-color: transparent;
+  color: #e8631c;
 }
 
-.dance-tour .box img {
-  width: 22vw;
-}
-
-.dance-tour .box .box-txt {
-  text-align: center;
-  padding: 20px 0;
+header {
+  background-color: #303030;
+  padding: 1% 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.dance-tour .box .box-txt h2 {
-  font-size: 1.5vw;
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  font-size: 18px;
+  position: relative;
 }
 
-.dance-tour .box .box-txt p {
-  font-family: "Montserrat", sans-serif;
-  padding-top: 10px;
-  width: 20vw;
+header nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0px;
+  background-color: #e8631c;
+  display: inline-block;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-@media screen and (max-width: 992px) {
-  header .top-sec {
-    padding: 10px 0;
+header nav ul li a:hover::after {
+  width: 30px;
+}
+
+header .fa-magnifying-glass {
+  color: white;
+}
+
+header .fa-bars {
+  color: white;
+}
+
+header .burger {
+  display: none;
+}
+
+@media (max-height: 500px) {
+  .top {
+    min-height: 100vh;
   }
-  header .head-txt a {
-    font-size: 1.6vw;
-  }
-  .dance-tour {
-    height: calc(100vh - 88px);
-  }
-  .dance-tour .dance-tour-txt h2 {
-    font-size: 3.5vw;
-  }
-  .dance-tour .dance-tour-txt p {
-    font-size: 1.6vw;
-    width: 50vw;
-  }
-  .boxes .box .box-txt h2 {
-    font-size: 2.5vw;
-  }
-  .boxes .box .box-txt p {
-    line-height: 20px;
+  .top .top-txt {
+    top: 40%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  header .top-sec img {
-    width: 70px;
+@media (max-width: 991.98px) {
+  .top {
+    height: 80vh;
   }
-  header .top-sec nav {
+  .top header img {
+    width: 100px;
+  }
+  .top header nav {
     display: none;
   }
-  header .top-sec .burger {
+  .top header .burger {
     display: inline-block;
   }
-  header .head-txt a {
+  .top .top-txt {
+    left: 3%;
+  }
+  .top .top-txt h1 {
+    font-size: 10vw;
+  }
+  .top .top-txt p {
     font-size: 2vw;
+    width: 50vw;
   }
-  .dance-tour {
-    height: calc(100vh - 58px);
+}
+
+@media (max-width: 575.98px) {
+  .top {
+    height: 60vh;
   }
-  .dance-tour .dance-tour-txt h2 {
-    font-size: 4vw;
+  .top .top-txt {
+    left: 3%;
   }
-  .dance-tour .dance-tour-txt p {
-    font-size: 2vw;
+  .top .top-txt h1 {
+    font-size: 10vw;
+  }
+  .top .top-txt p {
+    font-size: 2.5vw;
     width: 60vw;
-  }
-  .dance-tour .boxes {
-    gap: 30px;
+    line-height: 15px;
   }
 }
 
-@media screen and (max-width: 576px) {
-  header {
-    height: auto;
+@media (max-width: 450px) {
+  .top {
+    height: 50vh;
   }
-  header .bg-image {
-    height: 320px;
+  .top header img {
+    width: 70px;
   }
-  header .bg-image img {
-    height: 320px;
+  .top .top-txt {
+    width: 100vw;
+    text-align: center;
+    left: 0;
   }
-  header .head-txt {
-    position: absolute;
-    top: 20vh;
-    left: 3vw;
-  }
-  .dance-tour {
-    height: auto;
-    padding-bottom: 30px;
-  }
-  .dance-tour .dance-tour-txt {
-    padding-top: 30px;
-  }
-  .dance-tour .dance-tour-txt h2 {
-    font-size: 5vw;
-  }
-  .dance-tour .dance-tour-txt p {
-    font-size: 3vw;
-  }
-  .dance-tour .box {
-    width: 70vw;
-  }
-  .dance-tour .box img {
-    width: 70vw;
-  }
-  .dance-tour .box:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .dance-tour .box .box-txt h2 {
-    font-size: 5vw;
-  }
-  .dance-tour .box .box-txt p {
-    width: 100%;
-    font-size: 3.5vw;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  header .head-txt p {
-    font-size: 3vw;
-    width: 70vw;
-  }
-  header .head-txt a {
-    font-size: 3vw;
-  }
-  .dance-tour .dance-tour-txt h2 {
-    margin-bottom: 10px;
-  }
-  .dance-tour .dance-tour-txt p {
-    font-size: 3vw;
-    width: 70vw;
+  .top .top-txt p {
+    width: 100vw;
+    font-size: 4vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

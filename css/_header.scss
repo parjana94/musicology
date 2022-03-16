@@ -1,93 +1,46 @@
 header{
-    height: 100vh;
-    .bg-image{
-        width: 100vw;
-        height: 100vh;
-        img{
-            width: 100vw;
-            height: 100vh;
-        }
-    }
-    .top-back{
-        background-color: $darkgrey;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-    }
-    .top-sec{
-        width: 90vw;
-        @include flexcenter(row);
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 20px 0;
-        max-width: 1400px;
+    background-color: $darkgrey;
+    padding: 1% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav{
         ul{
             display: flex;
-            gap: 40px;
-        }
-        a{
-            color: white;
-            text-decoration: none;
-            font-family: $oswald;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-            position: relative;
-            &::after{
-                content: '';
-                position: absolute;
-                background-color: $orange;
-                width: 0px;
-                height: 2px;
-                left: 0;
-                bottom: -2px;
-                transition: .5s;
+            gap: 20px;
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-family: $oswald;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        height: 2px;
+                        width: 0px;
+                        background-color: $orange;
+                        display: inline-block;
+                        transition: .5s;
+                    }
+                    &:hover::after{
+                        width: 30px;
+                    }
+                }
             }
-            &:hover::after{
-                width: 30px;
-            }
-        }
-        .fa-magnifying-glass{
-            color: white;
-            cursor: pointer;
-            
-        }
-        .burger{
-            display: none;
-            cursor: pointer;
-            color: white;
         }
     }
-    .head-txt{
-        position: absolute;
-        top: 45vh;
-        left: 3vw;
-        h1{
-            font-family: $oswald;
-            font-size: 10vw;
-            text-transform: capitalize;
-        }
-        p{
-            font-family: $monst;
-            font-size: 2vw;
-            width: 42vw;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        a{
-            padding: 5px 50px;
-            text-decoration: none;
-            background-color: $orange;
-            color: white;
-            text-transform: uppercase;
-            font-size: 1.3vw;
-            font-family: $oswald;
-            transition: .5s;
-            &:hover{
-                color: $orange;
-                background-color: transparent;
-            }
-        }
+    .fa-magnifying-glass{
+        color: white;
+    }
+    .fa-bars{
+        color: white;
+    }
+    .burger{
+        display: none;
     }
 }
