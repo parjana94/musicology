@@ -1,0 +1,40 @@
+.dance-tour{
+    background-color: $orange;
+    padding: 70px 100px;
+    @include flexcenter(column);
+
+    .txt{
+        @include flexcenter(column);
+        h2{
+            @include headtxt;
+        }
+        p{
+            @include headp;
+        }
+    }
+    .boxes{
+        display: flex;
+        justify-content: space-between;
+        .box{
+            background-color: $darkgrey;
+            width: calc(100%/3 - 40px);
+            img{
+                width: 100%;
+            }
+            .box-txt{
+                @include flexcenter(column);
+                padding: 30px;
+                h2{
+                    font-family: $oswald;
+                    text-transform: uppercase;
+                    font-size: 1.5vw;
+                    padding-bottom: 10px;
+                }
+                p{
+                    font-family: $monst;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
