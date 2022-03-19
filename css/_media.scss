@@ -74,6 +74,31 @@
                 }
             }
         }
+      
+    }
+    .amazing-dance{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        .amazing-img{
+            max-height: 60vw;
+            width: 442px;
+            img{
+                height: 100%;
+            }
+        }
+        .amazing-txt{
+            text-align: center;
+            padding-left: 0;
+            h2{
+                font-size: 3rem;
+                padding-top: 30px;
+            }
+            p{
+                width: 100%;
+            }
+        }
     }
 }
 @media (max-width: 767.98px){
@@ -113,6 +138,16 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .amazing-dance{
+        .amazing-img{
+            width: 342px;
+        }
+        .amazing-txt{
+            h2{
+                font-size: 2rem;
             }
         }
     }

@@ -389,6 +389,12 @@ header .burger {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   padding: 7px 60px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.amazing-dance .amazing-txt a:hover {
+  padding: 7px 80px;
 }
 
 @media (max-height: 500px) {
@@ -450,6 +456,37 @@ header .burger {
   .pricing .boxes .box .box-txt h2 {
     font-size: 2vw;
   }
+  .amazing-dance {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: visible;
+  }
+  .amazing-dance .amazing-img {
+    max-height: 60vw;
+    width: 442px;
+  }
+  .amazing-dance .amazing-img img {
+    height: 100%;
+  }
+  .amazing-dance .amazing-txt {
+    text-align: center;
+    padding-left: 0;
+  }
+  .amazing-dance .amazing-txt h2 {
+    font-size: 3rem;
+    padding-top: 30px;
+  }
+  .amazing-dance .amazing-txt p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -493,6 +530,12 @@ header .burger {
   }
   .pricing .boxes .box .box-txt a:hover {
     padding: 10px 20vw;
+  }
+  .amazing-dance .amazing-img {
+    width: 342px;
+  }
+  .amazing-dance .amazing-txt h2 {
+    font-size: 2rem;
   }
 }
 
