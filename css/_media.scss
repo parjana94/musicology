@@ -40,11 +40,33 @@
             P{
                 font-size: 2vw;
                 width: 60vw;
+                font-weight: bold;
             }
         }
         .boxes{
             .box{
                 width: calc(100%/3 - 20px);
+                .box-txt{
+                    h2{
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+    .pricing{
+        .price-txt{
+            .price-h2{
+                font-size: 4vw;
+            }
+            .price-p{
+                font-size: 2vw;
+                width: 60vw;
+            }
+        }
+        .boxes{
+            gap: 30px;
+            .box{
                 .box-txt{
                     h2{
                         font-size: 2vw;
@@ -65,6 +87,30 @@
                 .box-txt{
                     h2{
                         font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+    .pricing{
+        .boxes{
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            .box{
+                width: 100%;
+                .box-txt{
+                    h2{
+                        font-size: 3vw;
+                    }
+                    p{
+                        width: 100%;
+                    }
+                    a{
+                        padding: 10px 20vw;
+                        &:hover{
+                            padding: 10px 20vw;
+                        }
                     }
                 }
             }
@@ -98,6 +144,22 @@
             }
         }
      }
+     .pricing{
+         .price-txt{
+             .price-h2{
+                font-size: 5vw;
+             }
+             .price-p{
+                font-size: 3vw;
+                width: 100vw;
+             }
+         }
+         .boxes{
+             .box{
+                 width: 70%;
+             }
+         }
+     }
 }
 @media (max-width: 450px){
     .top{
@@ -111,6 +173,7 @@
             width: 100vw;
             text-align: center;
             left: 0;
+            top: 43%;
             p{
                 width: 100vw;
                 font-size: 4vw;
@@ -118,12 +181,70 @@
         }
     }
     .dance-tour{
+        padding: 40px 70px;
         .boxes{
             .box{
                 width: 80vw;
                 .box-txt{
                     h2{
                         font-size: 4vw;
+                    }
+                }
+            }
+        }
+    }
+    .pricing{
+        .boxes{
+            .box{
+                .box-txt{
+                    h2{
+                        font-size: 4vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px){
+    .dance-tour{
+        .txt{
+            h2{
+                font-size: 6vw;
+            }
+            p{
+                font-size: 4vw;
+            }
+        }
+        .boxes{
+            .box{
+                .box-txt{
+                    h2{
+                        font-size: 5vw;
+                    }
+                }
+            }
+        }
+    }
+    .pricing{
+        .price-txt{
+            .price-h2{
+                font-size: 6vw;
+            }
+            .price-p{
+                font-size: 4vw;
+            }
+        }
+        .boxes{
+            .box{
+                .box-txt{
+                    h2{
+                        font-size: 5vw;
+                    }
+                    a{
+                        padding: 10px 30vw;
+                        &:hover{
+                            padding: 10px 30vw;
+                        }
                     }
                 }
             }

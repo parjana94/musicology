@@ -1,7 +1,10 @@
 .dance-tour{
     background-color: $orange;
+    background-image: url(../images/shape-dance-tour.png);
+    background-repeat: no-repeat;
     padding: 70px 100px;
     @include flexcenter(column);
+    overflow-x: hidden;
 
     .txt{
         @include flexcenter(column);
@@ -17,7 +20,9 @@
         justify-content: space-between;
         .box{
             background-color: $darkgrey;
-            width: calc(100%/3 - 40px);
+            width: $boxwidth;
+            transition: 0.5s;
+            cursor: pointer;
             img{
                 width: 100%;
             }
@@ -34,6 +39,10 @@
                     font-family: $monst;
                     text-align: center;
                 }
+            }
+            &:hover{
+                transform: scale(1.01);
+                box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
             }
         }
     }

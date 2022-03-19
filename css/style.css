@@ -29,6 +29,7 @@ h1, h2, p {
   position: absolute;
   top: 50%;
   left: 13%;
+  overflow: hidden;
 }
 
 .top .top-txt h1 {
@@ -122,6 +123,8 @@ header .burger {
 
 .dance-tour {
   background-color: #e8631c;
+  background-image: url(../images/shape-dance-tour.png);
+  background-repeat: no-repeat;
   padding: 70px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,6 +139,7 @@ header .burger {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-x: hidden;
 }
 
 .dance-tour .txt {
@@ -170,6 +174,7 @@ header .burger {
   line-height: 20px;
   text-align: center;
   padding-bottom: 40px;
+  line-height: 30px;
 }
 
 .dance-tour .boxes {
@@ -184,6 +189,9 @@ header .burger {
 .dance-tour .boxes .box {
   background-color: #303030;
   width: calc(100%/3 - 40px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .dance-tour .boxes .box img {
@@ -217,6 +225,128 @@ header .burger {
 .dance-tour .boxes .box .box-txt p {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+}
+
+.dance-tour .boxes .box:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0px 0px 5px 0px black;
+          box-shadow: 0px 0px 5px 0px black;
+}
+
+.pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px 100px;
+  overflow-x: hidden;
+}
+
+.pricing .price-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pricing .price-txt .price-h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.pricing .price-txt .price-p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3vw;
+  width: 40vw;
+  margin: 0 auto;
+  line-height: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  line-height: 30px;
+}
+
+.pricing .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+}
+
+.pricing .boxes .box {
+  background-color: #e8631c;
+  width: calc(100%/3 - 40px);
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 30px;
+}
+
+.pricing .boxes .box .box-txt {
+  text-align: center;
+}
+
+.pricing .boxes .box .box-txt h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 2vw;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.pricing .boxes .box .box-txt p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 20vw;
+  margin-bottom: 30px;
+}
+
+.pricing .boxes .box .box-txt a {
+  text-decoration: none;
+  color: white;
+  background-color: #303030;
+  padding: 10px 8vw;
+  font-family: "Oswald", sans-serif;
+  border-radius: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.pricing .boxes .box .box-txt a:hover {
+  padding: 10px 6vw;
 }
 
 @media (max-height: 500px) {
@@ -257,11 +387,25 @@ header .burger {
   .dance-tour .txt P {
     font-size: 2vw;
     width: 60vw;
+    font-weight: bold;
   }
   .dance-tour .boxes .box {
     width: calc(100%/3 - 20px);
   }
   .dance-tour .boxes .box .box-txt h2 {
+    font-size: 2vw;
+  }
+  .pricing .price-txt .price-h2 {
+    font-size: 4vw;
+  }
+  .pricing .price-txt .price-p {
+    font-size: 2vw;
+    width: 60vw;
+  }
+  .pricing .boxes {
+    gap: 30px;
+  }
+  .pricing .boxes .box .box-txt h2 {
     font-size: 2vw;
   }
 }
@@ -282,6 +426,31 @@ header .burger {
   }
   .dance-tour .boxes .box .box-txt h2 {
     font-size: 3vw;
+  }
+  .pricing .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
+  .pricing .boxes .box {
+    width: 100%;
+  }
+  .pricing .boxes .box .box-txt h2 {
+    font-size: 3vw;
+  }
+  .pricing .boxes .box .box-txt p {
+    width: 100%;
+  }
+  .pricing .boxes .box .box-txt a {
+    padding: 10px 20vw;
+  }
+  .pricing .boxes .box .box-txt a:hover {
+    padding: 10px 20vw;
   }
 }
 
@@ -307,6 +476,16 @@ header .burger {
     font-size: 3vw;
     width: 100vw;
   }
+  .pricing .price-txt .price-h2 {
+    font-size: 5vw;
+  }
+  .pricing .price-txt .price-p {
+    font-size: 3vw;
+    width: 100vw;
+  }
+  .pricing .boxes .box {
+    width: 70%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -320,16 +499,50 @@ header .burger {
     width: 100vw;
     text-align: center;
     left: 0;
+    top: 43%;
   }
   .top .top-txt p {
     width: 100vw;
     font-size: 4vw;
+  }
+  .dance-tour {
+    padding: 40px 70px;
   }
   .dance-tour .boxes .box {
     width: 80vw;
   }
   .dance-tour .boxes .box .box-txt h2 {
     font-size: 4vw;
+  }
+  .pricing .boxes .box .box-txt h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .dance-tour .txt h2 {
+    font-size: 6vw;
+  }
+  .dance-tour .txt p {
+    font-size: 4vw;
+  }
+  .dance-tour .boxes .box .box-txt h2 {
+    font-size: 5vw;
+  }
+  .pricing .price-txt .price-h2 {
+    font-size: 6vw;
+  }
+  .pricing .price-txt .price-p {
+    font-size: 4vw;
+  }
+  .pricing .boxes .box .box-txt h2 {
+    font-size: 5vw;
+  }
+  .pricing .boxes .box .box-txt a {
+    padding: 10px 30vw;
+  }
+  .pricing .boxes .box .box-txt a:hover {
+    padding: 10px 30vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

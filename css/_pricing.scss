@@ -1,0 +1,55 @@
+.pricing{
+    @include flexcenter(column);
+    padding: 70px 100px;
+    overflow-x: hidden;
+    .price-txt{
+        @include flexcenter(column);
+        .price-h2{
+            @include headtxt;
+        }
+        .price-p{
+            @include headp;
+        }
+    }
+    .boxes{
+        display: flex;
+        gap: 70px;
+        .box{
+            background-color: $orange;
+            width: $boxwidth;
+            max-width: 300px;
+            @include flexcenter(column);
+            padding: 50px 30px;
+            .box-txt{
+                text-align: center;
+                h2{
+                    font-family: $oswald;
+                    text-transform: uppercase;
+                    font-size: 2vw;
+                    padding-bottom: 10px;
+                    padding-top: 20px;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: $monst;
+                    text-align: center;
+                    width: 20vw;
+                    margin-bottom: 30px;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    background-color: $darkgrey;
+                    padding: 10px 8vw;
+                    font-family: $oswald;
+                    border-radius: 2px;
+                    transition: 0.5s;
+                    &:hover{
+                       padding: 10px 6vw;
+                    }
+                }
+            }
+        }
+    }
+    
+}
