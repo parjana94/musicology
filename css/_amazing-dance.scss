@@ -1,0 +1,19 @@
+.amazing-dance{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: $orange;
+    .amazing-txt{
+        padding-left: 4vw;
+        h2{
+            @include danceh2;
+        }
+        p{
+            @include dancep
+        }
+        a{
+            @include dancea
+        }
+    }
+}

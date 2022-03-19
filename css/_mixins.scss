@@ -22,3 +22,26 @@
     padding-bottom: 40px;
     line-height: 30px;
 }
+@mixin danceh2 {
+    font-size: 4rem;
+    font-family: $oswald;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@mixin dancep {
+    font-family: $monst;
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@mixin dancea {
+    color: white;
+    background-color: $darkgrey;
+    text-decoration: none;
+    font-family: $oswald;
+    text-transform: uppercase;
+    padding: 7px 60px;
+
+}

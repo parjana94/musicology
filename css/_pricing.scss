@@ -2,6 +2,7 @@
     @include flexcenter(column);
     padding: 70px 100px;
     overflow-x: hidden;
+    background-color: $darkgrey;
     .price-txt{
         @include flexcenter(column);
         .price-h2{

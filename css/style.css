@@ -250,6 +250,7 @@ header .burger {
           flex-direction: column;
   padding: 70px 100px;
   overflow-x: hidden;
+  background-color: #303030;
 }
 
 .pricing .price-txt {
@@ -347,6 +348,47 @@ header .burger {
 
 .pricing .boxes .box .box-txt a:hover {
   padding: 10px 6vw;
+}
+
+.amazing-dance {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: #e8631c;
+}
+
+.amazing-dance .amazing-txt {
+  padding-left: 4vw;
+}
+
+.amazing-dance .amazing-txt h2 {
+  font-size: 4rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.amazing-dance .amazing-txt p {
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+  font-size: 1.2rem;
+  line-height: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.amazing-dance .amazing-txt a {
+  color: white;
+  background-color: #303030;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding: 7px 60px;
 }
 
 @media (max-height: 500px) {
