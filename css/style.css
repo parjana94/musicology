@@ -571,6 +571,9 @@ header .burger {
   .pricing .boxes .box {
     width: 70%;
   }
+  .amazing-dance .amazing-img {
+    width: 200px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -602,6 +605,9 @@ header .burger {
   .pricing .boxes .box .box-txt h2 {
     font-size: 4vw;
   }
+  .amazing-dance .amazing-img {
+    width: 200px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -628,6 +634,9 @@ header .burger {
   }
   .pricing .boxes .box .box-txt a:hover {
     padding: 10px 30vw;
+  }
+  .amazing-dance .amazing-img {
+    width: 168px;
   }
 }
 /*# sourceMappingURL=style.css.map */
