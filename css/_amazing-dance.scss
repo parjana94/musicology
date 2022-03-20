@@ -4,8 +4,15 @@
     align-items: center;
     overflow: hidden;
     background-color: $orange;
+    .amazing-img{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
     .amazing-txt{
         padding-left: 4vw;
+        width: 46%;
         h2{
             @include danceh2;
         }

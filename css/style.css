@@ -362,8 +362,17 @@ header .burger {
   background-color: #e8631c;
 }
 
+.amazing-dance .amazing-img {
+  width: 50%;
+}
+
+.amazing-dance .amazing-img img {
+  width: 100%;
+}
+
 .amazing-dance .amazing-txt {
   padding-left: 4vw;
+  width: 46%;
 }
 
 .amazing-dance .amazing-txt h2 {
@@ -487,6 +496,12 @@ header .burger {
   .amazing-dance .amazing-txt p {
     width: 100%;
   }
+  .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -530,6 +545,9 @@ header .burger {
   }
   .pricing .boxes .box .box-txt a:hover {
     padding: 10px 20vw;
+  }
+  .amazing-dance {
+    height: 80vh;
   }
   .amazing-dance .amazing-img {
     width: 342px;
