@@ -140,6 +140,11 @@
             }
         }
     }
+    .simon{
+        p{
+            width: 100vw;
+        }
+    }
 }
 @media (max-width: 575.98px){
     .top{
@@ -279,6 +284,13 @@
             p{
                 width: 300px;
                 padding-bottom: 0;
+            }
+        }
+    }
+    .simon{
+        .simon-txt{
+            h2{
+                font-size: 2rem;
             }
         }
     }
