@@ -123,8 +123,6 @@ header .burger {
 
 .dance-tour {
   background-color: #e8631c;
-  background-image: url(../images/shape-dance-tour.png);
-  background-repeat: no-repeat;
   padding: 70px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,15 +159,16 @@ header .burger {
 .dance-tour .txt h2 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .dance-tour .txt p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.3vw;
-  width: 40vw;
+  font-size: 1.3rem;
+  width: 600px;
   margin: 0 auto;
   line-height: 20px;
   text-align: center;
@@ -272,15 +271,16 @@ header .burger {
 .pricing .price-txt .price-h2 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .pricing .price-txt .price-p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.3vw;
-  width: 40vw;
+  font-size: 1.3rem;
+  width: 600px;
   margin: 0 auto;
   line-height: 20px;
   text-align: center;
@@ -403,6 +403,65 @@ header .burger {
   padding: 7px 90px;
 }
 
+.statistics .head-txt {
+  padding-top: 100px;
+}
+
+.statistics .head-txt h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.statistics .head-txt p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  width: 600px;
+  margin: 0 auto;
+  line-height: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  line-height: 30px;
+}
+
+.statistics .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.statistics .numbers h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.statistics .numbers h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: capitalize;
+  padding-top: 15px;
+}
+
 @media (max-height: 500px) {
   .top {
     min-height: 100vh;
@@ -517,6 +576,9 @@ header .burger {
     width: 100%;
     padding-left: 0px;
   }
+  .dance .dance-txt a:hover {
+    padding: 7px 60px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -565,9 +627,6 @@ header .burger {
   .dance .dance-txt h2, .dance .dance-txt p {
     padding-left: 0;
   }
-  .dance .dance-txt p {
-    padding: 30px;
-  }
   .dance .dance-txt a {
     margin: 0;
   }
@@ -578,6 +637,19 @@ header .burger {
             flex-direction: column-reverse;
     padding-bottom: 30px;
     padding-top: 30px;
+  }
+  .statistics .head-txt h2 {
+    font-size: 2rem;
+  }
+  .statistics .head-txt p {
+    font-size: 1rem;
+    width: 400px;
+  }
+  .statistics .numbers h2 {
+    font-size: 2rem;
+  }
+  .statistics .numbers h3 {
+    font-size: 1rem;
   }
 }
 
@@ -612,6 +684,10 @@ header .burger {
   }
   .amazing-dance .amazing-img {
     width: 200px;
+  }
+  .statistics .head-txt p {
+    width: 300px;
+    padding-bottom: 0;
   }
 }
 

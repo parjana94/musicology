@@ -1,7 +1,5 @@
 .dance-tour{
     background-color: $orange;
-    background-image: url(../images/shape-dance-tour.png);
-    background-repeat: no-repeat;
     padding: 70px 100px;
     @include flexcenter(column);
     overflow-x: hidden;

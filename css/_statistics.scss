@@ -1,0 +1,30 @@
+.statistics{
+    .head-txt{
+        padding-top: 100px;
+        h2{
+            @include headtxt;
+        }
+        p{
+            @include headp;
+        }
+    }
+    .numbers{
+        @include flexcenter(row);
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h2{
+            font-family: $oswald;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        h3{
+            font-family: $monst;
+            font-size: 1.5rem;
+            color: white;
+            text-transform: capitalize;
+            padding-top: 15px;
+        }
+    }
+}

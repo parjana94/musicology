@@ -7,15 +7,16 @@
 @mixin headtxt{
     font-family: $oswald;
     text-transform: uppercase;
-    font-size: 3vw; 
+    font-size: 3rem; 
     font-weight: 700;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 @mixin headp{
     font-family: $monst;
-    font-size: 1.3vw;
-    width: 40vw;
+    font-size: 1.3rem;
+    width: 600px;
     margin: 0 auto;
     line-height: 20px;
     text-align: center;
