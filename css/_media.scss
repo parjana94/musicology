@@ -74,34 +74,13 @@
                 }
             }
         }
-      
     }
-    .amazing-dance{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: visible;
-        .amazing-img{
-            max-height: 60vw;
-            width: 442px;
-            img{
-                height: 100%;
-            }
-        }
-        .amazing-txt{
-            text-align: center;
-            padding-left: 0;
+    .dance{
+        .dance-txt{
             h2{
                 font-size: 3rem;
-                padding-top: 30px;
-            }
-            p{
-                width: 100%;
             }
         }
-    }
-    .reverse{
-        flex-direction: column-reverse;
     }
 }
 @media (max-width: 767.98px){
@@ -144,21 +123,19 @@
             }
         }
     }
-    .amazing-dance{
-        height: 80vh;
-        .amazing-img{
-            width: 342px;
-        }
-        .amazing-txt{
+    .dance{
+        .dance-txt{
             h2{
                 font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
             }
         }
     }
 }
 @media (max-width: 575.98px){
     .top{
-        height: 60vh;
         .top-txt{
             left:3%;
             h1{
@@ -199,10 +176,30 @@
              }
          }
      }
-     .amazing-dance{
-         .amazing-img{
-             width: 200px;
+     .dance{
+         flex-direction: column;
+         padding-top: 30px;
+         .dance-txt{
+             width: 100%;
+             text-align: center;
+            h2{
+                padding-top: 30px;
+            }
+            h2, p{
+                padding-left: 0;
+            }
+            p{
+                padding:30px;
+            }
+            a{
+                margin: 0;
+            }
          }
+     }
+     #reverse{
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+        padding-top: 30px;
      }
 }
 @media (max-width: 450px){

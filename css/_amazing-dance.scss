@@ -1,18 +1,15 @@
-.amazing-dance{
-    height: 100vh;
+.dance{
+    background-color: $orange;
     display: flex;
     align-items: center;
-    overflow: hidden;
-    background-color: $orange;
-    .amazing-img{
+    .dance-img{
         width: 50%;
         img{
             width: 100%;
         }
     }
-    .amazing-txt{
-        padding-left: 4vw;
-        width: 46%;
+    .dance-txt{
+        width: 50%;
         h2{
             @include danceh2;
         }
@@ -23,7 +20,7 @@
             @include dancea;
             transition: .5s;
             &:hover{
-                padding: 7px 80px;
+                padding: 7px 90px;
             }
         }
     }

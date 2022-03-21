@@ -350,60 +350,57 @@ header .burger {
   padding: 10px 6vw;
 }
 
-.amazing-dance {
-  height: 100vh;
+.dance {
+  background-color: #e8631c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
-  background-color: #e8631c;
 }
 
-.amazing-dance .amazing-img {
+.dance .dance-img {
   width: 50%;
 }
 
-.amazing-dance .amazing-img img {
+.dance .dance-img img {
   width: 100%;
 }
 
-.amazing-dance .amazing-txt {
-  padding-left: 4vw;
-  width: 46%;
+.dance .dance-txt {
+  width: 50%;
 }
 
-.amazing-dance .amazing-txt h2 {
+.dance .dance-txt h2 {
   font-size: 4rem;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+  padding-left: 100px;
 }
 
-.amazing-dance .amazing-txt p {
+.dance .dance-txt p {
   font-family: "Montserrat", sans-serif;
-  width: 70%;
-  font-size: 1.2rem;
   line-height: 25px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  font-size: 1.3rem;
+  padding: 30px 100px;
 }
 
-.amazing-dance .amazing-txt a {
+.dance .dance-txt a {
   color: white;
   background-color: #303030;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   padding: 7px 60px;
+  margin-left: 100px;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.amazing-dance .amazing-txt a:hover {
-  padding: 7px 80px;
+.dance .dance-txt a:hover {
+  padding: 7px 90px;
 }
 
 @media (max-height: 500px) {
@@ -465,42 +462,8 @@ header .burger {
   .pricing .boxes .box .box-txt h2 {
     font-size: 2vw;
   }
-  .amazing-dance {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: visible;
-  }
-  .amazing-dance .amazing-img {
-    max-height: 60vw;
-    width: 442px;
-  }
-  .amazing-dance .amazing-img img {
-    height: 100%;
-  }
-  .amazing-dance .amazing-txt {
-    text-align: center;
-    padding-left: 0;
-  }
-  .amazing-dance .amazing-txt h2 {
+  .dance .dance-txt h2 {
     font-size: 3rem;
-    padding-top: 30px;
-  }
-  .amazing-dance .amazing-txt p {
-    width: 100%;
-  }
-  .reverse {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
 }
 
@@ -546,21 +509,15 @@ header .burger {
   .pricing .boxes .box .box-txt a:hover {
     padding: 10px 20vw;
   }
-  .amazing-dance {
-    height: 80vh;
-  }
-  .amazing-dance .amazing-img {
-    width: 342px;
-  }
-  .amazing-dance .amazing-txt h2 {
+  .dance .dance-txt h2 {
     font-size: 2rem;
+  }
+  .dance .dance-txt p {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  .top {
-    height: 60vh;
-  }
   .top .top-txt {
     left: 3%;
   }
@@ -589,8 +546,36 @@ header .burger {
   .pricing .boxes .box {
     width: 70%;
   }
-  .amazing-dance .amazing-img {
-    width: 200px;
+  .dance {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+  .dance .dance-txt {
+    width: 100%;
+    text-align: center;
+  }
+  .dance .dance-txt h2 {
+    padding-top: 30px;
+  }
+  .dance .dance-txt h2, .dance .dance-txt p {
+    padding-left: 0;
+  }
+  .dance .dance-txt p {
+    padding: 30px;
+  }
+  .dance .dance-txt a {
+    margin: 0;
+  }
+  #reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
 

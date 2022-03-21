@@ -27,14 +27,13 @@
     font-family: $oswald;
     font-weight: bold;
     text-transform: uppercase;
+    padding-left: 100px;
 }
 @mixin dancep {
     font-family: $monst;
-    width: 70%;
-    font-size: 1.2rem;
     line-height: 25px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    font-size: 1.3rem;
+    padding: 30px 100px;
 }
 @mixin dancea {
     color: white;
@@ -43,5 +42,5 @@
     font-family: $oswald;
     text-transform: uppercase;
     padding: 7px 60px;
-
+    margin-left: 100px;
 }
