@@ -185,6 +185,7 @@
      }
      .dance{
          flex-direction: column;
+         padding-bottom: 50px;
          padding-top: 30px;
          .dance-txt{
              width: 100%;
@@ -325,11 +326,6 @@
                     }
                 }
             }
-        }
-    }
-    .amazing-dance{
-        .amazing-img{
-            width: 168px;
         }
     }
 }

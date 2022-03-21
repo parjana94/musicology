@@ -620,6 +620,7 @@ header .burger {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 50px;
     padding-top: 30px;
   }
   .dance .dance-txt {
@@ -720,9 +721,6 @@ header .burger {
   }
   .pricing .boxes .box .box-txt a:hover {
     padding: 10px 30vw;
-  }
-  .amazing-dance .amazing-img {
-    width: 168px;
   }
 }
 /*# sourceMappingURL=style.css.map */
