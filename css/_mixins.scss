@@ -45,3 +45,9 @@
     padding: 7px 60px;
     margin-left: 100px;
 }
+@mixin musich2 {
+    font-family: $oswald;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}

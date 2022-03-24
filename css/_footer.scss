@@ -1,0 +1,59 @@
+.footer{
+    padding: 60px 40px;
+    background-color: $darkgrey;
+    display: flex;
+    justify-content: space-between;
+    .musicology{
+        h2{
+            @include musich2;
+        }
+        p{
+            width: 400px;
+            font-family: $monst;
+            padding-bottom: 30px;
+        }
+        .soc{
+            display: flex;
+            gap: 10px;
+        }
+        .soc-icon{
+            background-color: white;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            @include flexcenter(row);
+            cursor: pointer;
+            transition: .5s;
+            &:hover{
+                background-color: $orange;
+            }
+        }
+        .fa-lg{
+            color: $darkgrey;
+        }
+    }
+    .nav{
+        display: flex;
+        gap: 40px;
+        h2{
+            @include musich2;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: $monst;
+            transition: .5s;
+            &:hover{
+                color: $orange;
+            }
+        }
+        li{
+            padding-top: 10px;
+            &:first-child{
+                padding-top: 0px;
+            }
+        }
+    
+    }
+}

@@ -145,7 +145,23 @@
             width: 100vw;
         }
     }
+    .footer{
+        flex-direction: column-reverse;
+        .nav{
+            justify-content: space-between;
+            padding-bottom: 50px;
+        }
+        .musicology{
+            @include flexcenter(column);
+            text-align: center;
+            p{
+                width: 500px;
+                line-height: 25px;
+            }
+        }
+    }
 }
+
 @media (max-width: 575.98px){
     .top{
         .top-txt{
@@ -230,6 +246,14 @@
             }
          }
      }
+     .subscribe{
+         .sub-txt{
+             p{
+                 width: 80vw;
+                 font-size: 1rem;
+             }
+         }
+     }
 }
 @media (max-width: 450px){
     .top{
@@ -291,6 +315,25 @@
         .simon-txt{
             h2{
                 font-size: 2rem;
+            }
+        }
+    }
+    .subscribe{
+        .sub-txt{
+            p{
+                width: 90vw;
+            }
+        }
+        .mail{
+            .mail-inp{
+                padding: 7px 40px 7px 15px;
+            }
+        }
+    }
+    .footer{
+        .musicology{
+            p{
+                width: 350px;
             }
         }
     }

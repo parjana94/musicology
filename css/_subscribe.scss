@@ -1,0 +1,37 @@
+.subscribe{
+    padding: 100px 0;
+    background-color: $orange;
+    .sub-txt{
+        h2{
+            @include headtxt;
+        }
+        p{
+            @include headp;
+        }
+    }
+    .mail{
+        @include flexcenter(row);
+        .mail-inp{
+            border: 0;
+            padding: 7px 150px 7px 15px;
+            &::placeholder{
+                text-transform: capitalize;
+                font-family: $monst;
+            }
+            &:focus-visible{
+               outline: none;
+            }
+        }
+        .btn{
+            border: none;
+            padding: 5px 50px;
+            background-color: $darkgrey;
+            font-family: $oswald;
+            font-weight: 500;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+    }
+}

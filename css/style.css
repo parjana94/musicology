@@ -522,6 +522,185 @@ header .burger {
   font-weight: bold;
 }
 
+.subscribe {
+  padding: 100px 0;
+  background-color: #e8631c;
+}
+
+.subscribe .sub-txt h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.subscribe .sub-txt p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  width: 600px;
+  margin: 0 auto;
+  line-height: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  line-height: 30px;
+}
+
+.subscribe .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.subscribe .mail .mail-inp {
+  border: 0;
+  padding: 7px 150px 7px 15px;
+}
+
+.subscribe .mail .mail-inp::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+}
+
+.subscribe .mail .mail-inp:-ms-input-placeholder {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+}
+
+.subscribe .mail .mail-inp::-ms-input-placeholder {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+}
+
+.subscribe .mail .mail-inp::placeholder {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+}
+
+.subscribe .mail .mail-inp:focus-visible {
+  outline: none;
+}
+
+.subscribe .mail .btn {
+  border: none;
+  padding: 5px 50px;
+  background-color: #303030;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 60px 40px;
+  background-color: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .musicology h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.footer .musicology p {
+  width: 400px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 30px;
+}
+
+.footer .musicology .soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.footer .musicology .soc-icon {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.footer .musicology .soc-icon:hover {
+  background-color: #e8631c;
+}
+
+.footer .musicology .fa-lg {
+  color: #303030;
+}
+
+.footer .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.footer .nav h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.footer .nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.footer .nav a:hover {
+  color: #e8631c;
+}
+
+.footer .nav li {
+  padding-top: 10px;
+}
+
+.footer .nav li:first-child {
+  padding-top: 0px;
+}
+
 @media (max-height: 500px) {
   .top {
     min-height: 100vh;
@@ -642,6 +821,38 @@ header .burger {
   .simon p {
     width: 100vw;
   }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 50px;
+  }
+  .footer .musicology {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer .musicology p {
+    width: 500px;
+    line-height: 25px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -715,6 +926,10 @@ header .burger {
   .statistics .numbers h3 {
     font-size: 1rem;
   }
+  .subscribe .sub-txt p {
+    width: 80vw;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -755,6 +970,15 @@ header .burger {
   }
   .simon .simon-txt h2 {
     font-size: 2rem;
+  }
+  .subscribe .sub-txt p {
+    width: 90vw;
+  }
+  .subscribe .mail .mail-inp {
+    padding: 7px 40px 7px 15px;
+  }
+  .footer .musicology p {
+    width: 350px;
   }
 }
 
